@@ -1,11 +1,9 @@
-const CelsiusToFahrenheit = (props) => {
-    const celsiusToFahrenheit = (props.degrees * 1.8) + 32
-    return(
-        <>
-            <h5>5º Ejercicio</h5>
-            <h2>{props.degrees}ºC = {celsiusToFahrenheit}ºF</h2>
-        </>
-    )
-}
+const CelsiusToFahrenheit = props => {
+	return (
+		<h2>
+			{props.degrees}ºC son {props.degrees * 1.8 + 32}ºF
+		</h2>
+	);
+};
 
-export default CelsiusToFahrenheit
+export default CelsiusToFahrenheit;

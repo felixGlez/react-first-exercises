@@ -1,11 +1,5 @@
-const CalculateTriangleArea = (props) => {
-    const triangleArea = (props.base * props.height) / 2
-    return(
-        <>
-            <h5>3º Ejercicio</h5>
-            <h2>El área del triángulo es {triangleArea}</h2>
-        </>
-    )
-}
+const CalculateTriangleArea = props => {
+	return <h2>El área del Triángulo es {(props.base * props.height) / 2}</h2>;
+};
 
 export default CalculateTriangleArea;
